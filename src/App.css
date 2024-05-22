@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
+    text-align: center;
+    background: rgb(91,42,184);
+    background: linear-gradient(0deg, rgba(91,42,184,1) 0%, rgba(42,89,184,1) 30%, rgba(42,184,89,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.LandingPage {
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Right {
+    margin-left: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Left {
+    margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.Bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Middle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+}
+
+.Center {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.Body {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 2vw;
+    max-width: 800px;
+    margin: auto;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow:   
+    rgba(0, 0, 0, 0.5) 0px 0px 40px -10px inset,
+    rgba(0, 0, 0, 0.3) 0px 0px 20px -20px inset,
+    rgba(50, 50, 100, 0.5) 0px 0px 100px -10px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(0, 0, 0, 0.2) 0px 0px 5px 1px inset,
+    rgba(0, 0, 0, 0.1) 0px 0px 2px 1px inset;
+}
+
+.Title {
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchBar {
+    margin-top: 3vh;
+}
+
+.Controls {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.PlaylistElement {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Footer {
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.Playlist {
+    width: '100%';
 }
